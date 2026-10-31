@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bist5s761akqa"]
+
+[ext_resource type="Script" uid="uid://dcejogijlmbhr" path="res://pause.gd" id="1_45vjg"]
+
+[node name="Pause" type="Control" unique_id=1824943839]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_45vjg")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=752799731]
+visible = false
+layout_mode = 0
+offset_left = 225.0
+offset_top = 10.0
+offset_right = 1029.2222
+offset_bottom = 702.2222
+scale = Vector2(0.9, 0.9)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1118029311]
+layout_mode = 2
+
+[node name="resume" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1246011064]
+layout_mode = 2
+text = "resume"
+
+[node name="quit" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1232999840]
+layout_mode = 2
+text = "Quit"
+
+[node name="Button3" type="Button" parent="PanelContainer/VBoxContainer" unique_id=2111577587]
+layout_mode = 2
+text = "other"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="PanelContainer/VBoxContainer/quit" to="." method="_on_quit_pressed"]
