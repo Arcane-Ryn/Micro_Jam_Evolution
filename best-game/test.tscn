@@ -1,0 +1,15 @@
+[gd_scene format=4 uid="uid://dfhib00wy5ife"]
+
+[ext_resource type="Script" uid="uid://dbr0ly7yj0wm3" path="res://test.gd" id="1_37kl0"]
+[ext_resource type="PackedScene" uid="uid://bnu52ro4bjfvd" path="res://player.tscn" id="2_6uqi0"]
+[ext_resource type="TileSet" uid="uid://bfqiic86jlm5t" path="res://tilesets/catacomb_tileset.tres" id="3_ppyta"]
+
+[node name="Node2D" type="Node2D" unique_id=1416203186]
+script = ExtResource("1_37kl0")
+
+[node name="CharacterBody2D" parent="." unique_id=1705183900 instance=ExtResource("2_6uqi0")]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=995768438]
+position = Vector2(581, 339)
+tile_map_data = PackedByteArray("AAAOAPz/AAADABgAAAAOAP3/AAADABkAAAAOAP7/AAADABcAAAAOAP//AAADABgAAAAOAAAAAAADABUAAAAPAPz/AAAEABgAAAAPAP3/AAAEABkAAAAPAP7/AAAEABcAAAAPAP//AAAEABgAAAAPAAAAAAAEABUAAAAOAAEAAAADABYAAAAOAAIAAAADABcAAAAOAAMAAAADABgAAAAOAAQAAAADABkAAAAPAAEAAAAEABYAAAAPAAIAAAAEABcAAAAPAAMAAAAEABgAAAAPAAQAAAAEABkAAAAOAPn/AAADABUAAAAOAPr/AAADABYAAAAOAPv/AAADABcAAAAPAPn/AAAEABUAAAAPAPr/AAAEABYAAAAPAPv/AAAEABcAAAA=")
+tile_set = ExtResource("3_ppyta")
